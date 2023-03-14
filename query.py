@@ -33,10 +33,10 @@ class Query:
         self.public = None
 
     def greeting(self):
-        return "Hi! I'm a query search engine here to help you find relevant companies in the biotech and healthcare space. I'll prompt you for some information, and then return some results based on what you enter."
+        return "Hi! I'm a query search engine here to help you find relevant companies in the biotech and healthcare space. I'll prompt you for some information, and then return some results based on what you enter.\n"
 
     def goodbye(self):
-        return "Hope you found your results helpful. Feel free to rerun the program with a new query."
+        return "Hope you found your results helpful. Feel free to rerun the program with a new query.\n"
 
     def internship_query(self):
         """
@@ -122,14 +122,14 @@ class Query:
         query_results = []  # for storing all results of query
 
         purpose = input(
-            "\nAre you looking for internships (type 'internship'), or are you just searching for a specific subset of companies in the biotech and healthcare space (type 'general')?  ")
+            "\nAre you looking for internships (type 'internship'), or are you just searching for a specific subset of companies in the biotech and healthcare space (type 'general')?\n")
 
         while purpose not in ['internship', 'general']:
             purpose = input(
-                "\nSorry, I didn't understand. Can you specify if you're looking for an internship (type 'internship') or doing a general query (type 'general')?  ")
+                "\nSorry, I didn't understand. Can you specify if you're looking for an internship (type 'internship') or doing a general query (type 'general')?\n")
 
         company_types = input(
-            "\nOkay, thanks! Do you want to specify a specific type of company you want to filter your query results by ('consulting', 'pharma', and/or 'biotech')? Separate each query input with commas. Otherwise, hit return. ")
+            "\nOkay, thanks! Do you want to specify a specific type of company you want to filter your query results by ('consulting', 'pharma', and/or 'biotech')? Separate each query input with commas. Otherwise, hit return.\n")
 
         # User specified type(s) of companies to filter by
         if len(company_types) > 0:
@@ -219,7 +219,7 @@ class Query:
         onto = get_ontology("/Users/maxkounga/Desktop/School/StanfordY3/Winter Q3/CS 270/Project/BMI210-FinalProject-Ontology.owl").load()
         query_results = []  # for storing all results of query
 
-        location = input("\nWhich location are you interested in? Enter in the format 'City, State/Country'")
+        location = input("\nWhich location are you interested in? Enter in the format 'City, State/Country\n")
         eligible_cities = ['New York, New York', 'London, England', 'Boston, Massachusetts', 'Dublin, Ireland',
                            'Evanston, Illnois', 'Chicago, Illinois', 'Melbourne, Australia', 'Paris, France',
                            'Wall Township, New Jersey', 'San Francisco, California', 'Waltham, Massachusetts',
@@ -254,7 +254,7 @@ class Query:
         onto = get_ontology("/Users/maxkounga/Desktop/School/StanfordY3/Winter Q3/CS 270/Project/BMI210-FinalProject-Ontology.owl").load()
         query_results = []  # for storing all results of query
 
-        revenue_str = input("\nWhat is the minimum revenue of your company of interest?")
+        revenue_str = input("\nWhat is the minimum revenue of your company of interest?\n")
         revenue = int(revenue_str)
 
         for inst in list(onto.individuals()):
@@ -275,7 +275,7 @@ class Query:
         onto = get_ontology("/Users/maxkounga/Desktop/School/StanfordY3/Winter Q3/CS 270/Project/BMI210-FinalProject-Ontology.owl").load()
         query_results = []  # for storing all results of query
 
-        public = input("\nWould you like to query public companies, yes or no?")
+        public = input("\nWould you like to query public companies, yes or no?\n")
 
         while public not in ['yes', 'no']:
             public = input(
@@ -301,7 +301,7 @@ class Query:
         onto = get_ontology("/Users/maxkounga/Desktop/School/StanfordY3/Winter Q3/CS 270/Project/BMI210-FinalProject-Ontology.owl").load()
         query_results = []  # for storing all results of query
 
-        size_str = input("\nWhat is the maximum number of employees you would like the company to have?")
+        size_str = input("\nWhat is the maximum number of employees you would like the company to have?\n")
         size = int(size_str)
 
         for inst in list(onto.individuals()):
@@ -316,7 +316,7 @@ if __name__ == '__main__':
     query = Query()
     print(query.greeting())
 
-    filter_selection = input("\nOkay, thanks! What would you like to filter your query results by 'search purpose', 'company location', 'company revenue', 'company public status'  and/or 'company size'? Separate each query input with commas. If all, hit return. ")
+    filter_selection = input("\nOkay, thanks! What would you like to filter your query results by:\n1. 'search purpose'\n2. 'company location'\n3. 'company revenue'\n4. 'company public status'\n5. 'company size'\nSeparate each query filter with a comma. If all, hit return.\n")
     if len(filter_selection) > 0:
         filter_selection = filter_selection.split(',')
         filter_list = []
@@ -348,15 +348,14 @@ if __name__ == '__main__':
             query_results = common(query_results, old_list)
         old_list = query_results
         keepGoing += 1
-    
+
     print('\nThe following companies matched your query:\n')
 
     for q in query_results:
         q_str = str(q)
         if q_str.find('.') == -1:
-            print(q_str[24:], '\n')
+            print('- ',q_str[24:], '\n')
         else:
-            print(q_str[q_str.find('.') + 1:],  '\n')
-
+            print('- ', q_str[q_str.find('.') + 1:],  '\n')
 
     print(query.goodbye())
