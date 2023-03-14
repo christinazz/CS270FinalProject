@@ -42,12 +42,22 @@ class Query:
         """
         # import ontology
         onto = get_ontology("http://www.semanticweb.org/gabriellecbelanger/ontologies/2023/2/BMI210-FinalProject-GB1").load()
+        query_results = []  # for storing all results of query
         
         # Query contains a specified company type
         if self.company_types:
-            pass
+            if 'consulting' in self.company_types:
+                query_results += onto.search(is_a = onto.Consulting_Firm)
+            
+            if 'pharma' in self.company_types:
+                query_results += onto.search(is_a = onto.Pharmaceutical_Company)
+            
+            if 'biotech' in self.company_types:
+                query_results += onto.search(is_a = onto.Biotech_Company)
         else:
             pass
+
+        return query_results
     
     def general_query(self):
         """
@@ -60,7 +70,24 @@ class Query:
 
         Returns a list of strs containing the company names, e.g. ['Bain&Company', 'Amgen', 'Regeneron'].
         """
-        pass
+        # import ontology
+        onto = get_ontology("http://www.semanticweb.org/gabriellecbelanger/ontologies/2023/2/BMI210-FinalProject-GB1").load()
+        query_results = []  # for storing all results of query
+        
+        # Query contains a specified company type
+        if self.company_types:
+            if 'consulting' in self.company_types:
+                query_results += onto.search(is_a = onto.Consulting_Firm)
+            
+            if 'pharma' in self.company_types:
+                query_results += onto.search(is_a = onto.Pharmaceutical_Company)
+            
+            if 'biotech' in self.company_types:
+                query_results += onto.search(is_a = onto.Biotech_Company)
+        else:
+            pass
+
+        return query_results
 
 # Main Function
 if __name__ == '__main__':
@@ -137,7 +164,7 @@ if __name__ == '__main__':
                     else:
                         print(t, 'is not a valid biotech subtype. It will not be included in the query.')
             
-            query.biotech_subtypes = biotech_subtypes_list
+                query.biotech_subtypes = biotech_subtypes_list
             
     query_results = []
     if purpose == 'internship':
