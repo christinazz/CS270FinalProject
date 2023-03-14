@@ -40,20 +40,30 @@ class Query:
 
         Returns a list of strs containing the company names, e.g. ['Bain&Company', 'Amgen', 'Regeneron'].
         """
-        # import ontology
-        onto = get_ontology("http://www.semanticweb.org/gabriellecbelanger/ontologies/2023/2/BMI210-FinalProject-GB1").load()
+        # import ontology (@Max, when you test, copy and paste the first line below and comment out the line with my file path)
+        # you'll have to replace with the file path to your local copy of the ontology, starting it with file://
+        onto = get_ontology("file:///Users/christinasze/Desktop/CS270/CS270FinalProject/BMI210-FinalProject-Ontology.owl").load()
         query_results = []  # for storing all results of query
         
         # Query contains a specified company type
         if self.company_types:
             if 'consulting' in self.company_types:
-                query_results += onto.search(is_a = onto.Consulting_Firm)
+                consulting_class = onto.search(iri = "*Consulting_Firm*")
+                consulting_results = onto.search(type = consulting_class[0], offersInternships = True)
+                consulting_results = list(consulting_results)
+                query_results = query_results + consulting_results
             
             if 'pharma' in self.company_types:
-                query_results += onto.search(is_a = onto.Pharmaceutical_Company)
+                pharma_class = onto.search(iri = "*Pharmaceutical_Company*")
+                pharma_results = onto.search(type = pharma_class[0], offersInternships = True)
+                pharma_results = list(pharma_results)
+                query_results = query_results + pharma_results
             
             if 'biotech' in self.company_types:
-                query_results += onto.search(is_a = onto.Biotech_Company)
+                biotech_class = onto.search(iri = "*Biotech_Company*")
+                biotech_results = onto.search(type = biotech_class[0], offersInternships = True)
+                biotech_results = list(biotech_results)
+                query_results = query_results + biotech_results
         else:
             pass
 
@@ -71,19 +81,30 @@ class Query:
         Returns a list of strs containing the company names, e.g. ['Bain&Company', 'Amgen', 'Regeneron'].
         """
         # import ontology
-        onto = get_ontology("http://www.semanticweb.org/gabriellecbelanger/ontologies/2023/2/BMI210-FinalProject-GB1").load()
+        onto = get_ontology("file:///Users/christinasze/Desktop/CS270/CS270FinalProject/BMI210-FinalProject-Ontology.owl").load()
+        print(list(onto.classes()))
+
         query_results = []  # for storing all results of query
         
         # Query contains a specified company type
         if self.company_types:
             if 'consulting' in self.company_types:
-                query_results += onto.search(is_a = onto.Consulting_Firm)
+                consulting_class = onto.search(iri = "*Consulting_Firm*")
+                consulting_results = onto.search(type = consulting_class[0])
+                consulting_results = list(consulting_results)
+                query_results = query_results + consulting_results
             
             if 'pharma' in self.company_types:
-                query_results += onto.search(is_a = onto.Pharmaceutical_Company)
+                pharma_class = onto.search(iri = "*Pharmaceutical_Company*")
+                pharma_results = onto.search(type = pharma_class[0])
+                pharma_results = list(pharma_results)
+                query_results = query_results + pharma_results
             
             if 'biotech' in self.company_types:
-                query_results += onto.search(is_a = onto.Biotech_Company)
+                biotech_class = onto.search(iri = "*Biotech_Company*")
+                biotech_results = onto.search(type = biotech_class[0])
+                biotech_results = list(biotech_results)
+                query_results = query_results + biotech_results
         else:
             pass
 
@@ -93,12 +114,12 @@ class Query:
 if __name__ == '__main__':
     query = Query()
     print(query.greeting())
-    purpose = input("Are you looking for internships (type 'internship'), or are you just searching for a specific subset of companies in the biotech and healthcare space (type 'general')?  ")
+    purpose = input("\nAre you looking for internships (type 'internship'), or are you just searching for a specific subset of companies in the biotech and healthcare space (type 'general')?  ")
 
     while purpose not in ['internship', 'general']:
-        purpose = input("Sorry, I didn't understand. Can you specify if you're looking for an internship (type 'internship') or doing a general query (type 'general')?  ")
+        purpose = input("\nSorry, I didn't understand. Can you specify if you're looking for an internship (type 'internship') or doing a general query (type 'general')?  ")
 
-    company_types = input("Okay, thanks! Do you want to specify a specific type of company you want to filter your query results by ('consulting', 'pharma', and/or 'biotech')? Separate each query input with commas. Otherwise, hit return. ")
+    company_types = input("\nOkay, thanks! Do you want to specify a specific type of company you want to filter your query results by ('consulting', 'pharma', and/or 'biotech')? Separate each query input with commas. Otherwise, hit return. ")
 
     # User specified type(s) of companies to filter by
     if len(company_types) > 0: 
@@ -115,7 +136,7 @@ if __name__ == '__main__':
     
         # Given specified type(s), user can specify subtypes (user should not specify subtypes if no general types)
         if 'consulting' in types_list:
-            print("Would you like to specify any subtypes of consulting firms?\n")
+            print("\nWould you like to specify any subtypes of consulting firms?\n")
             consulting_subtypes = input("Type 'general' for general consulting firms and/or 'specialized' for consulting firms that specify in healthcare and biotech. Separate each query input with commas. Otherwise, hit return. ")
             
             # User specified subtype(s) of consulting firms to filter by
@@ -129,10 +150,10 @@ if __name__ == '__main__':
                     else:
                         print(t, 'is not a valid consulting subtype. It will not be included in the query.')
             
-            query.consulting_subtypes = consulting_subtypes_list
+                query.consulting_subtypes = consulting_subtypes_list
         
         if 'pharma' in types_list:
-            print("Would you like to specify any subtypes of pharmaceutical companies?\n")
+            print("\nWould you like to specify any subtypes of pharmaceutical companies?\n")
             pharma_subtypes = input("Type 'generic', 'mainline', and/or 'research and development'. Separate each query input with commas. Otherwise, hit return. ")
             
             # User specified subtype(s) of consulting firms to filter by
@@ -146,11 +167,11 @@ if __name__ == '__main__':
                     else:
                         print(t, 'is not a valid pharmaceutical subtype. It will not be included in the query.')
             
-            query.pharma_subtypes = pharma_subtypes_list
+                query.pharma_subtypes = pharma_subtypes_list
 
         # Given specified type(s), user can specify subtypes (user should not specify subtypes if no general types)
         if 'biotech' in types_list:
-            print("Would you like to specify any subtypes of biotech companies?\n")
+            print("\nWould you like to specify any subtypes of biotech companies?\n")
             biotech_subtypes = input("Type 'diagnostics and analytical', 'digital health', 'drug delivery', 'genomics and proteomics', 'medical devices', 'therapeutics', and/or 'vetinary'. Separate each query input with commas. Otherwise, hit return. ")
             
             # User specified subtype(s) of consulting firms to filter by
@@ -168,11 +189,14 @@ if __name__ == '__main__':
             
     query_results = []
     if purpose == 'internship':
-        # query_results = query.internship_query()
-        print('going to do an internship search')
+        query_results = query.internship_query()
     else:  # purpose == 'general'
-        # query_results = query.general_query()
-        print('going to do a general query')
+        query_results = query.general_query()
     
-    print('The following companies matched your query: ', query_results, '\n')
+    print('\nThe following companies matched your query:\n')
+
+    for q in query_results:
+        q_str = str(q)
+        print(q_str[24:], '\n')
+
     print(query.goodbye())
