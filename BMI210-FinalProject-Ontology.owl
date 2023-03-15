@@ -52,7 +52,7 @@
         <Class IRI="/Specialized_Consulting_Firms"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Theraputics"/>
+        <Class IRI="/Therapeutics"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Vetinary"/>
@@ -425,7 +425,7 @@
         <Class IRI="/Consulting_Firm"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Theraputics"/>
+        <Class IRI="/Therapeutics"/>
         <Class IRI="/Biotech_Company"/>
     </SubClassOf>
     <SubClassOf>
@@ -437,7 +437,7 @@
         <NamedIndividual IRI="#Basepaws"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/Theraputics"/>
+        <Class IRI="/Therapeutics"/>
         <NamedIndividual IRI="#Biogen"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -485,7 +485,7 @@
         <NamedIndividual IRI="#Oncohost"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/Theraputics"/>
+        <Class IRI="/Therapeutics"/>
         <NamedIndividual IRI="#Regeneron"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -493,7 +493,7 @@
         <NamedIndividual IRI="#Sarepta_Therapeutics"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/Theraputics"/>
+        <Class IRI="/Therapeutics"/>
         <NamedIndividual IRI="#Tenya_Therapeutics"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -525,7 +525,7 @@
         <NamedIndividual IRI="/Amgen"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/Theraputics"/>
+        <Class IRI="/Therapeutics"/>
         <NamedIndividual IRI="/Amgen"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -557,7 +557,7 @@
         <NamedIndividual IRI="/Baxter_International"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/Theraputics"/>
+        <Class IRI="/Therapeutics"/>
         <NamedIndividual IRI="/Baxter_International"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -665,7 +665,7 @@
         <NamedIndividual IRI="/Gilead_Sciences"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/Theraputics"/>
+        <Class IRI="/Therapeutics"/>
         <NamedIndividual IRI="/Gilead_Sciences"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -709,7 +709,7 @@
         <NamedIndividual IRI="/Medtronic"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/Theraputics"/>
+        <Class IRI="/Therapeutics"/>
         <NamedIndividual IRI="/Medtronic"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -757,7 +757,7 @@
         <NamedIndividual IRI="/Philips"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/Theraputics"/>
+        <Class IRI="/Therapeutics"/>
         <NamedIndividual IRI="/Philips"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -793,7 +793,7 @@
         <NamedIndividual IRI="/Siemens_Healthcare"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/Theraputics"/>
+        <Class IRI="/Therapeutics"/>
         <NamedIndividual IRI="/Siemens_Healthcare"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1378,7 +1378,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="/isPublic"/>
         <NamedIndividual IRI="#Covetrus"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="/offersInternships"/>
@@ -3493,7 +3493,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
         <IRI>#Basepaws</IRI>
-        <Literal>Los Angeles, CA</Literal>
+        <Literal>Los Angeles, California</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Link_to_Website"/>
@@ -3513,7 +3513,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
         <IRI>#Biogen</IRI>
-        <Literal>Cambridge, MA</Literal>
+        <Literal>Cambridge, Massachusetts</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Link_to_Internships"/>
@@ -3538,7 +3538,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
         <IRI>#Bluebird_Bio</IRI>
-        <Literal>Somerville, MA</Literal>
+        <Literal>Somerville, Massachusetts</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Link_to_Website"/>
@@ -3623,7 +3623,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
         <IRI>#Exact_Sciences</IRI>
-        <Literal>Madison, WI</Literal>
+        <Literal>Madison, Wisconsin</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Link_to_Website"/>
@@ -3668,7 +3668,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
         <IRI>#Illumina</IRI>
-        <Literal>San Diego, CA</Literal>
+        <Literal>San Diego, California</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Link_to_Internships"/>
@@ -3693,7 +3693,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
         <IRI>#Intellia_Therapeutics</IRI>
-        <Literal>Cambridge, MA</Literal>
+        <Literal>Cambridge, Massachusetts</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Link_to_Website"/>
@@ -3713,7 +3713,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
         <IRI>#Invetx</IRI>
-        <Literal>Boston, MA</Literal>
+        <Literal>Boston, Massachusetts</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Link_to_Website"/>
@@ -3758,7 +3758,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
         <IRI>#Oncohost</IRI>
-        <Literal>Binyamina, Istra and Cary North Carolina</Literal>
+        <Literal>Binyamina, Israel</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Link_to_Website"/>
@@ -3778,7 +3778,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
         <IRI>#Regeneron</IRI>
-        <Literal>Eastview, Mount Pleasant, New York, U.S.</Literal>
+        <Literal>Mount Pleasant, New York</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Link_to_Internships"/>
@@ -3803,7 +3803,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
         <IRI>#Sarepta_Therapeutics</IRI>
-        <Literal>Cambridge, MA</Literal>
+        <Literal>Cambridge, Massachusetts</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Link_to_Internships"/>
@@ -3828,7 +3828,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
         <IRI>#Tenya_Therapeutics</IRI>
-        <Literal>South San Francisco, CA</Literal>
+        <Literal>San Francisco, CA</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Link_to_Internships"/>
@@ -3880,7 +3880,7 @@ https://en.wikipedia.org/wiki/AbbVie&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
         <IRI>/AbbVie</IRI>
-        <Literal>North Chicago, IL, USA</Literal>
+        <Literal>Chicago, Illionis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Link_to_Internships"/>
@@ -3952,7 +3952,7 @@ https://en.wikipedia.org/wiki/Alexion_Pharmaceuticals&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
         <IRI>/Alexion_Pharmaceuticals</IRI>
-        <Literal>Boston, MA, USA</Literal>
+        <Literal>Boston, Massachusetts</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Link_to_Internships"/>
@@ -4041,7 +4041,7 @@ https://en.wikipedia.org/wiki/AstraZeneca&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
         <IRI>/AstraZeneca</IRI>
-        <Literal>Cambridge, UK</Literal>
+        <Literal>Cambridge, England</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Link_to_Internships"/>
@@ -4177,7 +4177,7 @@ https://en.wikipedia.org/wiki/Bayer&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
         <IRI>/Becton_Dickinson</IRI>
-        <Literal>Franklin Lakes, NJ</Literal>
+        <Literal>Franklin Lakes, New Jersey</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Link_to_Internships"/>
@@ -4316,7 +4316,7 @@ https://en.wikipedia.org/wiki/Boehringer_Ingelheim&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
         <IRI>/BostonConsultingGroup</IRI>
-        <Literal>New York, New York</Literal>
+        <Literal>Boston, Massachusetts</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Link_to_Internships"/>
@@ -4343,7 +4343,7 @@ https://en.wikipedia.org/wiki/Bristol_Myers_Squibb&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
         <IRI>/Bristol_Myers_Squibb</IRI>
-        <Literal>NYC, NY, USA</Literal>
+        <Literal>New York, New York</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Link_to_Internships"/>
@@ -4365,7 +4365,7 @@ https://en.wikipedia.org/wiki/Catalent&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
         <IRI>/Catalent</IRI>
-        <Literal>Somerset, NJ, USA</Literal>
+        <Literal>Somerset, New Jersey</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Link_to_Internships"/>
@@ -4545,7 +4545,7 @@ https://en.wikipedia.org/wiki/Catalent&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
         <IRI>/EOFlow</IRI>
-        <Literal>South Korea</Literal>
+        <Literal>Seoul, South Korea</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Link_to_Website"/>
@@ -4592,7 +4592,7 @@ https://en.wikipedia.org/wiki/Eli_Lilly_and_Company&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
         <IRI>/Eli_Lilly</IRI>
-        <Literal>Indianapolis, IN, USA</Literal>
+        <Literal>Indianapolis, Indiana</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Link_to_Internships"/>
@@ -4737,7 +4737,7 @@ https://en.wikipedia.org/wiki/Eli_Lilly_and_Company&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
         <IRI>/Gilead_Sciences</IRI>
-        <Literal>Foster City, California, United States</Literal>
+        <Literal>Foster City, California</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Link_to_Internships"/>
@@ -4764,7 +4764,7 @@ https://en.wikipedia.org/wiki/GSK_plc&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
         <IRI>/GlaxoSmithKline_GSK</IRI>
-        <Literal>Brentford, UK</Literal>
+        <Literal>Brentford, United Kingdom</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Link_to_Internships"/>
@@ -4881,7 +4881,7 @@ https://en.wikipedia.org/wiki/Johnson_%26_Johnson&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
         <IRI>/Johnson_and_Johnson</IRI>
-        <Literal>New Brunswick, NJ, USA</Literal>
+        <Literal>New Brunswick, New Jersey</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Link_to_Internships"/>
@@ -5001,7 +5001,7 @@ https://en.wikipedia.org/wiki/Johnson_%26_Johnson&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
         <IRI>/Medtronic</IRI>
-        <Literal>Franklin Lakes, NJ</Literal>
+        <Literal>Franklin Lakes, New Jersey</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Link_to_Internships"/>
@@ -5028,7 +5028,7 @@ https://en.wikipedia.org/wiki/Moderna&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
         <IRI>/Moderna</IRI>
-        <Literal>Cambridge, MA, USA</Literal>
+        <Literal>Cambridge, Massachusetts</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Link_to_Internships"/>
@@ -5204,7 +5204,7 @@ https://en.wikipedia.org/wiki/Pfizer&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
         <IRI>/Pfizer</IRI>
-        <Literal>NYC, NY, USA</Literal>
+        <Literal>New York, New York</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Link_to_Internships"/>
@@ -5456,7 +5456,7 @@ https://en.wikipedia.org/wiki/Teva_Pharmaceuticals&quot;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Description"/>
-        <IRI>/Theraputics</IRI>
+        <IRI>/Therapeutics</IRI>
         <Literal>Companies whose core business is the application of biotechnology to the discovery and development of novel therapeutic compounds and probe molecules for applications in medicine.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -5509,7 +5509,7 @@ https://en.wikipedia.org/wiki/Vertex_Pharmaceuticals&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
         <IRI>/Vertex_Pharmaceuticals</IRI>
-        <Literal>Boston, MA, USA, and London, UK</Literal>
+        <Literal>Boston, Massachuetts</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Link_to_Internships"/>
@@ -5536,7 +5536,7 @@ https://en.wikipedia.org/wiki/Viatris&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
         <IRI>/Viatris</IRI>
-        <Literal>Canonsburg, PA, USA</Literal>
+        <Literal>Canonsburg, Pennsylvania</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Link_to_Internships"/>
@@ -5688,7 +5688,7 @@ https://en.wikipedia.org/wiki/Merck_%26_Co.&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
         <IRI>/Merck&amp;Co</IRI>
-        <Literal>Rahway, NJ, USA</Literal>
+        <Literal>Rahway, New Jersey</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Link_to_Internships"/>

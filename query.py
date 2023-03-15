@@ -44,32 +44,100 @@ class Query:
         - subtype (list str): subtype of type of company (e.g. 'biotech' has subclasses 'therapeutics', 'diagnostic and analytical')
         Returns a list of strs containing the company names, e.g. ['Bain&Company', 'Amgen', 'Regeneron'].
         """
-        # import ontology (@Max, when you test, copy and paste the first line below and comment out the line with my file path)
-        # you'll have to replace with the file path to your local copy of the ontology, starting it with file://
-        onto = get_ontology("/Users/maxkounga/Desktop/School/StanfordY3/Winter Q3/CS 270/Project/BMI210-FinalProject-Ontology.owl").load()
+        # Max's path: /Users/maxkounga/Desktop/School/StanfordY3/Winter Q3/CS 270/Project/
+        onto = get_ontology("file:///Users/christinasze/Desktop/CS270/CS270FinalProject/BMI210-FinalProject-Ontology.owl").load()
         query_results = []  # for storing all results of query
 
         # Query contains a specified company type
         if self.company_types:
             if 'consulting' in self.company_types:
-                consulting_class = onto.search(iri="*Consulting_Firm*")
-                consulting_results = onto.search(type=consulting_class[0], offersInternships=True)
-                consulting_results = list(consulting_results)
-                query_results = query_results + consulting_results
+                if self.consulting_subtypes:
+                    if 'general' in self.consulting_subtypes:
+                        gen_consulting_class = onto.search(iri="*General_Consulting*")
+                        gen_consulting_results = onto.search(type=gen_consulting_class[0], offersInternships=True)
+                        gen_consulting_results = list(gen_consulting_results)
+                        query_results = query_results + gen_consulting_results
+                        
+                    if 'specialized' in self.consulting_subtypes:
+                        spec_consulting_class = onto.search(iri="*Specialized_Consulting*")
+                        spec_consulting_results = onto.search(type=spec_consulting_class[0], offersInternships=True)
+                        spec_consulting_results = list(spec_consulting_results)
+                        query_results = query_results + spec_consulting_results
+                else:
+                    consulting_class = onto.search(iri="*Consulting_Firm*")
+                    consulting_results = onto.search(type=consulting_class[0], offersInternships=True)
+                    consulting_results = list(consulting_results)
+                    query_results = query_results + consulting_results
 
             if 'pharma' in self.company_types:
-                pharma_class = onto.search(iri="*Pharmaceutical_Company*")
-                pharma_results = onto.search(type=pharma_class[0], offersInternships=True)
-                pharma_results = list(pharma_results)
-                query_results = query_results + pharma_results
+                if self.pharma_subtypes:
+                    if 'generic' in self.pharma_subtypes:
+                        generic_class = onto.search(iri="*Generic*")
+                        generic_results = onto.search(type=generic_class[0], offersInternships=True)
+                        generic_results = list(generic_results)
+                        query_results = query_results + generic_results
+                        
+                    if 'mainline' in self.pharma_subtypes:
+                        mainline_class = onto.search(iri="*Mainline*")
+                        mainline_results = onto.search(type=mainline_class[0], offersInternships=True)
+                        mainline_results = list(mainline_results)
+                        query_results = query_results + mainline_results
+                        
+                    if 'research and development' in self.pharma_subtypes:
+                        rd_class = onto.search(iri="*Research_and_Development*")
+                        rd_results = onto.search(type=rd_class[0], offersInternships=True)
+                        rd_results = list(rd_results)
+                        query_results = query_results + rd_results
+                else:
+                    pharma_class = onto.search(iri="*Pharmaceutical_Company*")
+                    pharma_results = onto.search(type=pharma_class[0], offersInternships=True)
+                    pharma_results = list(pharma_results)
+                    query_results = query_results + pharma_results
 
             if 'biotech' in self.company_types:
-                biotech_class = onto.search(iri="*Biotech_Company*")
-                biotech_results = onto.search(type=biotech_class[0], offersInternships=True)
-                biotech_results = list(biotech_results)
-                query_results = query_results + biotech_results
+                if self.biotech_subtypes:
+                    if 'diagnostics and analytical' in self.biotech_subtypes:
+                        daa_class = onto.search(iri="*Diagnostics_and_Analytical*")
+                        daa_results = onto.search(type=daa_class[0], offersInternships=True)
+                        daa_results = list(daa_results)
+                        query_results = query_results + daa_results
+                        
+                    if 'digital health' in self.biotech_subtypes:
+                        dh_class = onto.search(iri="*Digital_Health*")
+                        dh_results = onto.search(type=dh_class[0], offersInternships=True)
+                        dh_results = list(dh_results)
+                        query_results = query_results + dh_results
+
+                    if 'genomics and proteomics' in self.biotech_subtypes:
+                        gap_class = onto.search(iri="*Genomics_and_Proteomics*")
+                        gap_results = onto.search(type=gap_class[0], offersInternships=True)
+                        gap_results = list(gap_results)
+                        query_results = query_results + gap_results
+                        
+                    if 'medical devices' in self.biotech_subtypes:
+                        med_class = onto.search(iri="*Medical_Devices*")
+                        med_results = onto.search(type=med_class[0], offersInternships=True)
+                        med_results = list(med_results)
+                        query_results = query_results + med_results
+                        
+                    if 'therapeutics' in self.biotech_subtypes:
+                        therp_class = onto.search(iri="*Therapeutics*")
+                        therp_results = onto.search(type=therp_class[0], offersInternships=True)
+                        therp_results = list(therp_results)
+                        query_results = query_results + therp_results
+                        
+                    if 'vetinary' in self.biotech_subtypes:
+                        vet_class = onto.search(iri="*Vetinary*")
+                        vet_results = onto.search(type=vet_class[0], offersInternships=True)
+                        vet_results = list(vet_results)
+                        query_results = query_results + vet_results
+                else:
+                    biotech_class = onto.search(iri="*Biotech_Company*")
+                    biotech_results = onto.search(type=biotech_class[0], offersInternships=True)
+                    biotech_results = list(biotech_results)
+                    query_results = query_results + biotech_results
         else:
-            pass
+            query_results = list(onto.individuals())
 
         return query_results
 
@@ -80,7 +148,8 @@ class Query:
         Returns a list of strs containing the company names, e.g. ['Bain&Company', 'Amgen', 'Regeneron'].
         """
         # import ontology
-        onto = get_ontology("/Users/maxkounga/Desktop/School/StanfordY3/Winter Q3/CS 270/Project/BMI210-FinalProject-Ontology.owl").load()
+        # onto = get_ontology("/Users/maxkounga/Desktop/School/StanfordY3/Winter Q3/CS 270/Project/BMI210-FinalProject-Ontology.owl").load()
+        onto = get_ontology("file:///Users/christinasze/Desktop/CS270/CS270FinalProject/BMI210-FinalProject-Ontology.owl").load()
         print(list(onto.classes()))
 
         query_results = []  # for storing all results of query
@@ -88,24 +157,93 @@ class Query:
         # Query contains a specified company type
         if self.company_types:
             if 'consulting' in self.company_types:
-                consulting_class = onto.search(iri="*Consulting_Firm*")
-                consulting_results = onto.search(type=consulting_class[0])
-                consulting_results = list(consulting_results)
-                query_results = query_results + consulting_results
+                if self.consulting_subtypes:
+                    if 'general' in self.consulting_subtypes:
+                        gen_consulting_class = onto.search(iri="*General_Consulting*")
+                        gen_consulting_results = onto.search(type=gen_consulting_class[0])
+                        gen_consulting_results = list(gen_consulting_results)
+                        query_results = query_results + gen_consulting_results
+                        
+                    if 'specialized' in self.consulting_subtypes:
+                        spec_consulting_class = onto.search(iri="*Specialized_Consulting*")
+                        spec_consulting_results = onto.search(type=spec_consulting_class[0])
+                        spec_consulting_results = list(spec_consulting_results)
+                        query_results = query_results + spec_consulting_results
+                else:
+                    consulting_class = onto.search(iri="*Consulting_Firm*")
+                    consulting_results = onto.search(type=consulting_class[0])
+                    consulting_results = list(consulting_results)
+                    query_results = query_results + consulting_results
 
             if 'pharma' in self.company_types:
-                pharma_class = onto.search(iri="*Pharmaceutical_Company*")
-                pharma_results = onto.search(type=pharma_class[0])
-                pharma_results = list(pharma_results)
-                query_results = query_results + pharma_results
+                if self.pharma_subtypes:
+                    if 'generic' in self.pharma_subtypes:
+                        generic_class = onto.search(iri="*Generic*")
+                        generic_results = onto.search(type=generic_class[0])
+                        generic_results = list(generic_results)
+                        query_results = query_results + generic_results
+                        
+                    if 'mainline' in self.pharma_subtypes:
+                        mainline_class = onto.search(iri="*Mainline*")
+                        mainline_results = onto.search(type=mainline_class[0])
+                        mainline_results = list(mainline_results)
+                        query_results = query_results + mainline_results
+                        
+                    if 'research and development' in self.pharma_subtypes:
+                        rd_class = onto.search(iri="*Research_and_Development*")
+                        rd_results = onto.search(type=rd_class[0])
+                        rd_results = list(rd_results)
+                        query_results = query_results + rd_results
+                else:
+                    pharma_class = onto.search(iri="*Pharmaceutical_Company*")
+                    pharma_results = onto.search(type=pharma_class[0])
+                    pharma_results = list(pharma_results)
+                    query_results = query_results + pharma_results
 
             if 'biotech' in self.company_types:
-                biotech_class = onto.search(iri="*Biotech_Company*")
-                biotech_results = onto.search(type=biotech_class[0])
-                biotech_results = list(biotech_results)
-                query_results = query_results + biotech_results
+                if self.biotech_subtypes:
+                    if 'diagnostics and analytical' in self.biotech_subtypes:
+                        daa_class = onto.search(iri="*Diagnostics_and_Analytical*")
+                        daa_results = onto.search(type=daa_class[0])
+                        daa_results = list(daa_results)
+                        query_results = query_results + daa_results
+                        
+                    if 'digital health' in self.biotech_subtypes:
+                        dh_class = onto.search(iri="*Digital_Health*")
+                        dh_results = onto.search(type=dh_class[0])
+                        dh_results = list(dh_results)
+                        query_results = query_results + dh_results
+
+                    if 'genomics and proteomics' in self.biotech_subtypes:
+                        gap_class = onto.search(iri="*Genomics_and_Proteomics*")
+                        gap_results = onto.search(type=gap_class[0])
+                        gap_results = list(gap_results)
+                        query_results = query_results + gap_results
+                        
+                    if 'medical devices' in self.biotech_subtypes:
+                        med_class = onto.search(iri="*Medical_Devices*")
+                        med_results = onto.search(type=med_class[0])
+                        med_results = list(med_results)
+                        query_results = query_results + med_results
+                        
+                    if 'therapeutics' in self.biotech_subtypes:
+                        therp_class = onto.search(iri="*Therapeutics*")
+                        therp_results = onto.search(type=therp_class[0])
+                        therp_results = list(therp_results)
+                        query_results = query_results + therp_results
+                        
+                    if 'vetinary' in self.biotech_subtypes:
+                        vet_class = onto.search(iri="*Vetinary*")
+                        vet_results = onto.search(type=vet_class[0])
+                        vet_results = list(vet_results)
+                        query_results = query_results + vet_results
+                else:
+                    biotech_class = onto.search(iri="*Biotech_Company*")
+                    biotech_results = onto.search(type=biotech_class[0])
+                    biotech_results = list(biotech_results)
+                    query_results = query_results + biotech_results
         else:
-            pass
+            query_results = list(onto.individuals())
 
         return query_results
 
@@ -118,7 +256,8 @@ class Query:
         """
         # import ontology (@Max, when you test, copy and paste the first line below and comment out the line with my file path)
         # you'll have to replace with the file path to your local copy of the ontology, starting it with file://
-        onto = get_ontology("/Users/maxkounga/Desktop/School/StanfordY3/Winter Q3/CS 270/Project/BMI210-FinalProject-Ontology.owl").load()
+        # onto = get_ontology("/Users/maxkounga/Desktop/School/StanfordY3/Winter Q3/CS 270/Project/BMI210-FinalProject-Ontology.owl").load()
+        onto = get_ontology("file:///Users/christinasze/Desktop/CS270/CS270FinalProject/BMI210-FinalProject-Ontology.owl").load()
         query_results = []  # for storing all results of query
 
         purpose = input(
@@ -216,7 +355,8 @@ class Query:
         """
         # import ontology (@Max, when you test, copy and paste the first line below and comment out the line with my file path)
         # you'll have to replace with the file path to your local copy of the ontology, starting it with file://
-        onto = get_ontology("/Users/maxkounga/Desktop/School/StanfordY3/Winter Q3/CS 270/Project/BMI210-FinalProject-Ontology.owl").load()
+        # onto = get_ontology("/Users/maxkounga/Desktop/School/StanfordY3/Winter Q3/CS 270/Project/BMI210-FinalProject-Ontology.owl").load()
+        onto = get_ontology("file:///Users/christinasze/Desktop/CS270/CS270FinalProject/BMI210-FinalProject-Ontology.owl").load()
         query_results = []  # for storing all results of query
 
         location = input("\nWhich location are you interested in? Enter in the format 'City, State/Country\n")
@@ -231,7 +371,10 @@ class Query:
                            'Somerville, Massachusetts', 'Zug, Switzerland', 'Los Angeles, California', 'Rahway, New Jersey',
                            'Westbrook, Maine', 'Portland, Maine', 'Parsippany, New Jersey', 'Franklin Lakes, New Jersey',
                            'Deerfield, Illinois', 'Erlangen, Germany', 'Eindhoven, Netherlands', 'Billerica, Massachussets',
-                           'Madrid, Spain', 'Cincinnati, Ohio', 'Kansas City, Missouri', 'Westwood, Massachussets']
+                           'Madrid, Spain', 'Cincinnati, Ohio', 'Kansas City, Missouri', 'Westwood, Massachussets',
+                           'Hyderabad, India', 'Cambridge, United Kingdom', 'Laval, Canada', 'Leverkusen, Germany',
+                           'Lynn, Norfolk, United Kingdom', 'Mainz, Germany', 'Ingelheim am Rhein, Germany', 'Somerset, New Jersey',
+                           'Kansas City, Missouri', 'Brampton, Ontario, Canada', 'Indianapolis, Indiana']
 
         while location not in eligible_cities:
             location = input(
@@ -251,7 +394,8 @@ class Query:
         """
         # import ontology (@Max, when you test, copy and paste the first line below and comment out the line with my file path)
         # you'll have to replace with the file path to your local copy of the ontology, starting it with file://
-        onto = get_ontology("/Users/maxkounga/Desktop/School/StanfordY3/Winter Q3/CS 270/Project/BMI210-FinalProject-Ontology.owl").load()
+        # onto = get_ontology("/Users/maxkounga/Desktop/School/StanfordY3/Winter Q3/CS 270/Project/BMI210-FinalProject-Ontology.owl").load()
+        onto = get_ontology("file:///Users/christinasze/Desktop/CS270/CS270FinalProject/BMI210-FinalProject-Ontology.owl").load()
         query_results = []  # for storing all results of query
 
         revenue_str = input("\nWhat is the minimum revenue of your company of interest?\n")
@@ -272,7 +416,8 @@ class Query:
         """
         # import ontology (@Max, when you test, copy and paste the first line below and comment out the line with my file path)
         # you'll have to replace with the file path to your local copy of the ontology, starting it with file://
-        onto = get_ontology("/Users/maxkounga/Desktop/School/StanfordY3/Winter Q3/CS 270/Project/BMI210-FinalProject-Ontology.owl").load()
+        # onto = get_ontology("/Users/maxkounga/Desktop/School/StanfordY3/Winter Q3/CS 270/Project/BMI210-FinalProject-Ontology.owl").load()
+        onto = get_ontology("file:///Users/christinasze/Desktop/CS270/CS270FinalProject/BMI210-FinalProject-Ontology.owl").load()
         query_results = []  # for storing all results of query
 
         public = input("\nWould you like to query public companies, yes or no?\n")
@@ -298,7 +443,8 @@ class Query:
         """
         # import ontology (@Max, when you test, copy and paste the first line below and comment out the line with my file path)
         # you'll have to replace with the file path to your local copy of the ontology, starting it with file://
-        onto = get_ontology("/Users/maxkounga/Desktop/School/StanfordY3/Winter Q3/CS 270/Project/BMI210-FinalProject-Ontology.owl").load()
+        # onto = get_ontology("/Users/maxkounga/Desktop/School/StanfordY3/Winter Q3/CS 270/Project/BMI210-FinalProject-Ontology.owl").load()
+        onto = get_ontology("file:///Users/christinasze/Desktop/CS270/CS270FinalProject/BMI210-FinalProject-Ontology.owl").load()
         query_results = []  # for storing all results of query
 
         size_str = input("\nWhat is the maximum number of employees you would like the company to have?\n")
