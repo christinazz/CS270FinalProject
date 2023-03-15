@@ -394,7 +394,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Drug_Delivery"/>
-        <Class IRI="/Medical_Devices"/>
+        <Class IRI="/Biotech_Company"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/General_Consulting_Firms"/>

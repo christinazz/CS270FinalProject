@@ -131,6 +131,12 @@ class Query:
                         vet_results = onto.search(type=vet_class[0], offersInternships=True)
                         vet_results = list(vet_results)
                         query_results = query_results + vet_results
+                    
+                    if 'drug delivery' in self.biotech_subtypes:
+                        dd_class = onto.search(iri="*Drug_Delivery*")
+                        dd_results = onto.search(type=dd_class[0], offersInternships=True)
+                        dd_results = list(dd_results)
+                        query_results = query_results + dd_results
                 else:
                     biotech_class = onto.search(iri="*Biotech_Company*")
                     biotech_results = onto.search(type=biotech_class[0], offersInternships=True)
@@ -236,6 +242,12 @@ class Query:
                         vet_results = onto.search(type=vet_class[0])
                         vet_results = list(vet_results)
                         query_results = query_results + vet_results
+
+                    if 'drug delivery' in self.biotech_subtypes:
+                        dd_class = onto.search(iri="*Drug_Delivery*")
+                        dd_results = onto.search(type=dd_class[0])
+                        dd_results = list(dd_results)
+                        query_results = query_results + dd_results
                 else:
                     biotech_class = onto.search(iri="*Biotech_Company*")
                     biotech_results = onto.search(type=biotech_class[0])
