@@ -150,7 +150,6 @@ class Query:
         # import ontology
         # onto = get_ontology("/Users/maxkounga/Desktop/School/StanfordY3/Winter Q3/CS 270/Project/BMI210-FinalProject-Ontology.owl").load()
         onto = get_ontology("file:///Users/christinasze/Desktop/CS270/CS270FinalProject/BMI210-FinalProject-Ontology.owl").load()
-        print(list(onto.classes()))
 
         query_results = []  # for storing all results of query
 
