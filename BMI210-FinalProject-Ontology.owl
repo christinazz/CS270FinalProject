@@ -3920,7 +3920,7 @@ https://en.wikipedia.org/wiki/AbbVie&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Description"/>
         <IRI>/Accenture</IRI>
-        <Literal>Accenture plc is an Irish-American professional services company based in Dublin, specializing in information technology services and consulting.</Literal>
+        <Literal>Accenture plc is an Irish-American professional services company based in Dublin, specializing in information technology services and consulting. https://en.wikipedia.org/wiki/Accenture</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
@@ -3992,7 +3992,7 @@ https://en.wikipedia.org/wiki/Alexion_Pharmaceuticals&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Description"/>
         <IRI>/Aritsan_Healthcare_Consulting</IRI>
-        <Literal>Artisan Healthcare Consulting is a management consulting firm that provides strategic insights to healthcare product companies. We are founded on the belief that a consulting company should exceed expectations - every time. Our senior leadership is involved with each project directly, providing a superior experience and superior results. Artisan provides quantitative and strategic analysis that helps our clients&apos; leadership act decisively. We recognize that even the most quantitative analysis involves interpretation. Let our experienced leadership guide your strategic decisions and help you make the most of your business opportunities. We bring expertise in some of the most complex healthcare markets and in quantitative techniques to evaluate our clients&apos; opportunities and performance. Artisan leadership has helped clients ranging from global pharmaceutical, biotechnology and device companies with billion dollar brands to emerging, venture backed organizations that are just beginning to evaluate how to commercialize or partner their products.</Literal>
+        <Literal>Artisan Healthcare Consulting is a management consulting firm that provides strategic insights to healthcare product companies. We are founded on the belief that a consulting company should exceed expectations - every time. Our senior leadership is involved with each project directly, providing a superior experience and superior results. Artisan provides quantitative and strategic analysis that helps our clients&apos; leadership act decisively. We recognize that even the most quantitative analysis involves interpretation. Let our experienced leadership guide your strategic decisions and help you make the most of your business opportunities. We bring expertise in some of the most complex healthcare markets and in quantitative techniques to evaluate our clients&apos; opportunities and performance. Artisan leadership has helped clients ranging from global pharmaceutical, biotechnology and device companies with billion dollar brands to emerging, venture backed organizations that are just beginning to evaluate how to commercialize or partner their products. https://www.linkedin.com/company/artisan-healthcare-consulting/</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
@@ -4078,7 +4078,7 @@ https://en.wikipedia.org/wiki/Aurobindo_Pharma&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Description"/>
         <IRI>/Avalere_Health</IRI>
-        <Literal>Avalere Health, a part of Fishawack Health, is a health care business consulting firm headquartered in Washington, D.C., that serves clients across the healthcare industry specializing in strategy, policy, and data analysis for life sciences, health plans, and providers.</Literal>
+        <Literal>Avalere Health, a part of Fishawack Health, is a health care business consulting firm headquartered in Washington, D.C., that serves clients across the healthcare industry specializing in strategy, policy, and data analysis for life sciences, health plans, and providers. https://en.wikipedia.org/wiki/Avalere_Health</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
@@ -4291,7 +4291,7 @@ https://en.wikipedia.org/wiki/Boehringer_Ingelheim&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Description"/>
         <IRI>/Boost_Healthcare_Consulting</IRI>
-        <Literal>Boost Healthcare is a boutique consulting firm based out of Alameda, California, founded in 2013 by Liana Hamilton to provide revenue recovery at zero cost - fee for service.  Over the years, we have grown into a mid-sized firm being able to handle the large clients while keeping our customized approach for every client.</Literal>
+        <Literal>Boost Healthcare is a boutique consulting firm based out of Alameda, California, founded in 2013 by Liana Hamilton to provide revenue recovery at zero cost - fee for service.  Over the years, we have grown into a mid-sized firm being able to handle the large clients while keeping our customized approach for every client. https://www.boosthealthcare.com/about</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
@@ -4311,7 +4311,7 @@ https://en.wikipedia.org/wiki/Boehringer_Ingelheim&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
         <IRI>/BostonConsultingGroup</IRI>
-        <Literal>Boston Consulting Group is a global consulting firm that partners with leaders in business and society to tackle their most important challenges and capture their greatest opportunities. Our success depends on a spirit of deep collaboration and a global community of diverse individuals determined to make the world and each other better every day.</Literal>
+        <Literal>Boston Consulting Group is a global consulting firm that partners with leaders in business and society to tackle their most important challenges and capture their greatest opportunities. Our success depends on a spirit of deep collaboration and a global community of diverse individuals determined to make the world and each other better every day. https://www.bcg.com/about/overview</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
@@ -4405,7 +4405,7 @@ https://en.wikipedia.org/wiki/Catalent&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Description"/>
         <IRI>/ClearView_Healthcare_Partners</IRI>
-        <Literal>ClearView helps life science clients build robust strategies. Our work spans asset, franchise, and corporate-level strategy across therapeutic areas, lifecycle stages, and regions of the world. Our project-based engagements begin with a thorough understanding of your need and the decision or problem at hand. We then create a fit-for-purpose analytical approach and deploy a dedicated consulting team.</Literal>
+        <Literal>ClearView helps life science clients build robust strategies. Our work spans asset, franchise, and corporate-level strategy across therapeutic areas, lifecycle stages, and regions of the world. Our project-based engagements begin with a thorough understanding of your need and the decision or problem at hand. We then create a fit-for-purpose analytical approach and deploy a dedicated consulting team. https://clearviewhcp.com/the-clearview-way/</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
@@ -4435,7 +4435,7 @@ https://en.wikipedia.org/wiki/Catalent&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Description"/>
         <IRI>/Curzon_Consulting</IRI>
-        <Literal>An award-winning management consultancy who deliver tangible and enduring results for our clients.  We were established in London in 2003 as ‘Curzon &amp; Company’. Since then, we have supported business leaders across Financial Services, Infrastructure, Manufacturing &amp; Engineering, Healthcare and Public Sector with major challenges. We are proud of the work we have achieved together with our clients.  The Financial Times and Statista named us as one of the UK’s leading management consultants 2020, based on recommendations by peers and clients. We have also been recognised by our industry body, MCA, for six consecutive years through their annual awards.</Literal>
+        <Literal>An award-winning management consultancy who deliver tangible and enduring results for our clients.  We were established in London in 2003 as ‘Curzon &amp; Company’. Since then, we have supported business leaders across Financial Services, Infrastructure, Manufacturing &amp; Engineering, Healthcare and Public Sector with major challenges. We are proud of the work we have achieved together with our clients.  The Financial Times and Statista named us as one of the UK’s leading management consultants 2020, based on recommendations by peers and clients. We have also been recognised by our industry body, MCA, for six consecutive years through their annual awards. https://www.curzonconsulting.com/about/</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
@@ -4480,7 +4480,7 @@ https://en.wikipedia.org/wiki/Catalent&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Description"/>
         <IRI>/Deloitte</IRI>
-        <Literal>Deloitte Touche Tohmatsu Limited, commonly referred to as Deloitte, is an international professional services network headquartered in London, England. Deloitte is the largest professional services network by revenue and number of professionals in the world and is considered one of the Big Four accounting firms along with EY (Ernst &amp; Young), KPMG and PricewaterhouseCoopers (PWC). It also offers consulting services.</Literal>
+        <Literal>Deloitte Touche Tohmatsu Limited, commonly referred to as Deloitte, is an international professional services network headquartered in London, England. Deloitte is the largest professional services network by revenue and number of professionals in the world and is considered one of the Big Four accounting firms along with EY (Ernst &amp; Young), KPMG and PricewaterhouseCoopers (PWC). It also offers consulting services. https://en.wikipedia.org/wiki/Deloitte</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
@@ -4607,7 +4607,7 @@ https://en.wikipedia.org/wiki/Eli_Lilly_and_Company&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Description"/>
         <IRI>/Emerton</IRI>
-        <Literal>Emerton is a global high-standard strategy consulting firm. Our team is mobilized to bring speed to a few clients in each of the sectors we cover, both in their strategic decision-making and in the delivery of their plans. We line-up a unique set of capabilities and track record on high stake assignments with our clients. Initially founded to bring, on selected industrial and Tech sectors, the service level of large reference strategy consulting firms while bringing higher value and better return on investment, Emerton quickly paved its own path. It established a culture of its own, working with large corporations, family businesses and technology entrepreneurs, combining deep sector expertise to agile and pragmatic approaches. Our clients reflect our global nature. Roughly half are Europe-based, a third from the Americas, the remainder being based in Asia, Middle East or Africa. For them, with a one-office culture, we can flexibly mobilize the best fitted-team, with the appropriate functional and sector expertise. The quality of our people is the cornerstone of our ability to serve our clients. We aggregated a team of individuals combining high seniority and deep expertise in their respective fields, highest ethical and professional standards.</Literal>
+        <Literal>Emerton is a global high-standard strategy consulting firm. Our team is mobilized to bring speed to a few clients in each of the sectors we cover, both in their strategic decision-making and in the delivery of their plans. We line-up a unique set of capabilities and track record on high stake assignments with our clients. Initially founded to bring, on selected industrial and Tech sectors, the service level of large reference strategy consulting firms while bringing higher value and better return on investment, Emerton quickly paved its own path. It established a culture of its own, working with large corporations, family businesses and technology entrepreneurs, combining deep sector expertise to agile and pragmatic approaches. Our clients reflect our global nature. Roughly half are Europe-based, a third from the Americas, the remainder being based in Asia, Middle East or Africa. For them, with a one-office culture, we can flexibly mobilize the best fitted-team, with the appropriate functional and sector expertise. The quality of our people is the cornerstone of our ability to serve our clients. We aggregated a team of individuals combining high seniority and deep expertise in their respective fields, highest ethical and professional standards. https://www.emerton.co/about/</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
@@ -4647,7 +4647,7 @@ https://en.wikipedia.org/wiki/Eli_Lilly_and_Company&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Description"/>
         <IRI>/Freed_Associates</IRI>
-        <Literal>Freed Associates is a California-based consulting firm comprised of a team of experts who work exclusively in healthcare. With more than 26 years of direct experience in the healthcare industry, our teams collaborate with each client in their unique environment on complex and critical initiatives to deliver enduring value.</Literal>
+        <Literal>Freed Associates is a California-based consulting firm comprised of a team of experts who work exclusively in healthcare. With more than 26 years of direct experience in the healthcare industry, our teams collaborate with each client in their unique environment on complex and critical initiatives to deliver enduring value. https://www.linkedin.com/company/freed-associates/</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
@@ -4692,7 +4692,7 @@ https://en.wikipedia.org/wiki/Eli_Lilly_and_Company&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Description"/>
         <IRI>/GE_Healthcare_Partners</IRI>
-        <Literal>GE Healthcare Partners is the consulting/advisory arm of GE Healthcare, which is a subsidiary of General Electric (GE). GE Healthcare Partners specializes in data analytics, financial modeling, and clinical insights for healthcare organizations and systems, and is one of the largest consulting firms in the world dedicated exclusively to healthcare consulting.</Literal>
+        <Literal>GE Healthcare Partners is the consulting/advisory arm of GE Healthcare, which is a subsidiary of General Electric (GE). GE Healthcare Partners specializes in data analytics, financial modeling, and clinical insights for healthcare organizations and systems, and is one of the largest consulting firms in the world dedicated exclusively to healthcare consulting. https://managementconsulted.com/ge-healthcare-partners/</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
@@ -4779,7 +4779,7 @@ https://en.wikipedia.org/wiki/GSK_plc&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Description"/>
         <IRI>/Health_Advances</IRI>
-        <Literal>Health Advances is a strategy consulting firm that focuses exclusively on the healthcare industry. We are scientists, clinicians, and business professionals who share a passion for supporting commercialization and driving adoption of innovations that improve healthcare. The firm employs over 170 full-time professionals in four main offices.</Literal>
+        <Literal>Health Advances is a strategy consulting firm that focuses exclusively on the healthcare industry. We are scientists, clinicians, and business professionals who share a passion for supporting commercialization and driving adoption of innovations that improve healthcare. The firm employs over 170 full-time professionals in four main offices. https://healthadvances.com/about/</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
@@ -4804,7 +4804,7 @@ https://en.wikipedia.org/wiki/GSK_plc&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Description"/>
         <IRI>/Huron</IRI>
-        <Literal>Huron Consulting Group, commonly known as Huron, is a management consulting firm offering services to the Healthcare, Life Sciences, Commercial, and Higher Education industries.</Literal>
+        <Literal>Huron Consulting Group, commonly known as Huron, is a management consulting firm offering services to the Healthcare, Life Sciences, Commercial, and Higher Education industries. https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwjWn7auycX9AhWJAzQIHWI8As4QmhN6BAhfEAI&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHuron_Consulting_Group&amp;usg=AOvVaw3ZEdYk3AuwRMkIHIHt7Tuo</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
@@ -4824,7 +4824,7 @@ https://en.wikipedia.org/wiki/GSK_plc&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Description"/>
         <IRI>/IQVIA</IRI>
-        <Literal>IQVIA (NYSE:IQV) is a leading global provider of advanced analytics, technology solutions, and clinical research services to the life sciences industry. IQVIA creates intelligent connections across all aspects of healthcare through its analytics, transformative technology, big data resources and extensive domain expertise. IQVIA Connected Intelligence™ delivers powerful insights with speed and agility — enabling customers to accelerate the clinical development and commercialization of innovative medical treatments that improve healthcare outcomes for patients. With approximately 86,000 employees, IQVIA conducts operations in more than 100 countries.</Literal>
+        <Literal>IQVIA (NYSE:IQV) is a leading global provider of advanced analytics, technology solutions, and clinical research services to the life sciences industry. IQVIA creates intelligent connections across all aspects of healthcare through its analytics, transformative technology, big data resources and extensive domain expertise. IQVIA Connected Intelligence™ delivers powerful insights with speed and agility — enabling customers to accelerate the clinical development and commercialization of innovative medical treatments that improve healthcare outcomes for patients. With approximately 86,000 employees, IQVIA conducts operations in more than 100 countries. https://www.linkedin.com/company/iqvia/</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
@@ -4896,7 +4896,7 @@ https://en.wikipedia.org/wiki/Johnson_%26_Johnson&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Description"/>
         <IRI>/L.E.K._Consulting</IRI>
-        <Literal>L.E.K. Consulting is a global strategy consulting firm based in London and Boston. Founded in 1983 by three partners from Bain &amp; Company, L.E.K. focuses on corporate strategy, marketing and sales, mergers and acquisitions, and operations.</Literal>
+        <Literal>L.E.K. Consulting is a global strategy consulting firm based in London and Boston. Founded in 1983 by three partners from Bain &amp; Company, L.E.K. focuses on corporate strategy, marketing and sales, mergers and acquisitions, and operations. https://en.wikipedia.org/wiki/L.E.K._Consulting</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
@@ -5088,7 +5088,7 @@ https://en.wikipedia.org/wiki/Moderna&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Description"/>
         <IRI>/Nous_Group</IRI>
-        <Literal>Nous is an international management consultancy with over 600 people operating across Australia, New Zealand, the UK, Ireland and Canada.</Literal>
+        <Literal>Nous is an international management consultancy with over 600 people operating across Australia, New Zealand, the UK, Ireland and Canada. https://nousgroup.com/about-nous/why-nous/</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
@@ -5152,7 +5152,7 @@ https://en.wikipedia.org/wiki/Novo_Nordisk&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Description"/>
         <IRI>/Oliver_Wyman</IRI>
-        <Literal>Oliver Wyman is a global leader in management consulting. With offices in more than 70 cities across 30 countries, Oliver Wyman combines deep industry knowledge with specialized expertise in strategy, operations, risk management, and organization transformation. The firm has more than 6,000 professionals around the world who work with clients to optimize their business, improve their operations and risk profile, and accelerate their organizational performance to seize the most attractive opportunities. Oliver Wyman is a business of Marsh McLennan [NYSE: MMC].</Literal>
+        <Literal>Oliver Wyman is a global leader in management consulting. With offices in more than 70 cities across 30 countries, Oliver Wyman combines deep industry knowledge with specialized expertise in strategy, operations, risk management, and organization transformation. The firm has more than 6,000 professionals around the world who work with clients to optimize their business, improve their operations and risk profile, and accelerate their organizational performance to seize the most attractive opportunities. Oliver Wyman is a business of Marsh McLennan [NYSE: MMC]. https://www.oliverwyman.com/pages/about-oliver-wyman.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
@@ -5177,7 +5177,7 @@ https://en.wikipedia.org/wiki/Novo_Nordisk&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Description"/>
         <IRI>/PA_Consulting_Group</IRI>
-        <Literal>PA Consulting Group is a professional services firm that works with public, private and third-sector organisations. It was founded in 1943 by Ernest E. Butten, Tom H. Kirkham and Dr David Seymour, who used a new approach to people management to increase productivity in munitions factories during World War 2.</Literal>
+        <Literal>PA Consulting Group is a professional services firm that works with public, private and third-sector organisations. It was founded in 1943 by Ernest E. Butten, Tom H. Kirkham and Dr David Seymour, who used a new approach to people management to increase productivity in munitions factories during World War 2. https://en.wikipedia.org/wiki/PA_Consulting_Group</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
@@ -5249,7 +5249,7 @@ https://en.wikipedia.org/wiki/Pfizer&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Description"/>
         <IRI>/Pinnacle_Healthcare_Consulting</IRI>
-        <Literal>Pinnacle Healthcare Consulting is known as a consulting firm with services which include health care valuation, both business valuation and fair market value for physician compensation arrangements, service line strategy and improvement, physician compensation plan.</Literal>
+        <Literal>Pinnacle Healthcare Consulting is known as a consulting firm with services which include health care valuation, both business valuation and fair market value for physician compensation arrangements, service line strategy and improvement, physician compensation plan. https://www.zoominfo.com/c/pinnacle-healthcare-consulting-llc/216662414</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
@@ -5269,7 +5269,7 @@ https://en.wikipedia.org/wiki/Pfizer&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Description"/>
         <IRI>/Putnam_Associates</IRI>
-        <Literal>Putnam, an Inizio Advisory Company, is a premier strategic consulting partner for pharmaceutical and life science companies serving a range of biopharmaceutical, diagnostics, medtech, and private equity/venture capital clients. For more than 30 years, we have provided high-impact strategic advice and analytical services, helping our clients solve their most complex challenges across the patient journey and franchise lifecycle to bring preventions and treatments to those that need them. We offer an unparalleled depth and breadth of advisory service expertise combined with scientific and technical capabilities across strategic and therapeutic areas. We listen to client needs, help shape hypotheses, analyze data, and advise on the strategy of life-changing therapies, empowering better decisions to create long-term value for patients.</Literal>
+        <Literal>Putnam, an Inizio Advisory Company, is a premier strategic consulting partner for pharmaceutical and life science companies serving a range of biopharmaceutical, diagnostics, medtech, and private equity/venture capital clients. For more than 30 years, we have provided high-impact strategic advice and analytical services, helping our clients solve their most complex challenges across the patient journey and franchise lifecycle to bring preventions and treatments to those that need them. We offer an unparalleled depth and breadth of advisory service expertise combined with scientific and technical capabilities across strategic and therapeutic areas. We listen to client needs, help shape hypotheses, analyze data, and advise on the strategy of life-changing therapies, empowering better decisions to create long-term value for patients. https://www.linkedin.com/company/putnam-associates/about/</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
@@ -5482,7 +5482,7 @@ https://en.wikipedia.org/wiki/Teva_Pharmaceuticals&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Description"/>
         <IRI>/VIE_Healthcare_Consulting</IRI>
-        <Literal>VIE Healthcare Consulting provides leading-edge financial and operational consulting for hospitals, healthcare institutions, and all providers of patient care.</Literal>
+        <Literal>VIE Healthcare Consulting provides leading-edge financial and operational consulting for hospitals, healthcare institutions, and all providers of patient care. https://viehealthcare.com/about/from-the-founder/</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
@@ -5551,7 +5551,7 @@ https://en.wikipedia.org/wiki/Viatris&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Description"/>
         <IRI>/ZS</IRI>
-        <Literal>ZS Associates is a management consulting and professional services firm focusing on consulting, software, and technology, headquartered in Evanston, Illinois that provides services for clients in healthcare, private equity, and technology.</Literal>
+        <Literal>ZS Associates is a management consulting and professional services firm focusing on consulting, software, and technology, headquartered in Evanston, Illinois that provides services for clients in healthcare, private equity, and technology. https://en.wikipedia.org/wiki/ZS_Associates</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
@@ -5631,7 +5631,7 @@ https://en.wikipedia.org/wiki/Viatris&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Description"/>
         <IRI>/Bain&amp;Company</IRI>
-        <Literal>A global consultancy that helps the world’s most ambitious change makers define the future. Across 64 cities in 39 countries, we work alongside our clients as one team with a shared ambition to achieve extraordinary results, outperform the competition, and redefine industries. We complement our tailored, integrated expertise with a vibrant ecosystem of digital innovators to deliver better, faster, and more enduring outcomes. Our 10-year commitment to invest more than $1 billion in pro bono services brings our talent, expertise, and insight to organizations tackling today’s urgent challenges in education, racial equity, social justice, economic development, and the environment. Since our founding in 1973, we have measured our success by the success of our clients, and we proudly maintain the highest level of client advocacy in the industry.</Literal>
+        <Literal>A global consultancy that helps the world’s most ambitious change makers define the future. Across 64 cities in 39 countries, we work alongside our clients as one team with a shared ambition to achieve extraordinary results, outperform the competition, and redefine industries. We complement our tailored, integrated expertise with a vibrant ecosystem of digital innovators to deliver better, faster, and more enduring outcomes. Our 10-year commitment to invest more than $1 billion in pro bono services brings our talent, expertise, and insight to organizations tackling today’s urgent challenges in education, racial equity, social justice, economic development, and the environment. Since our founding in 1973, we have measured our success by the success of our clients, and we proudly maintain the highest level of client advocacy in the industry. https://www.bain.com/about/</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
@@ -5656,7 +5656,7 @@ https://en.wikipedia.org/wiki/Viatris&quot;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Description"/>
         <IRI>/McKinsey&amp;Company</IRI>
-        <Literal>McKinsey &amp; Company is a global management consulting firm founded in 1926 by University of Chicago professor James O. McKinsey, that offers professional services to corporations, governments, and other organizations. It is considered one of the &quot;Big Three&quot; consulting firms.</Literal>
+        <Literal>McKinsey &amp; Company is a global management consulting firm founded in 1926 by University of Chicago professor James O. McKinsey, that offers professional services to corporations, governments, and other organizations. It is considered one of the &quot;Big Three&quot; consulting firms. https://en.wikipedia.org/wiki/McKinsey_%26_Company</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/Headquarters"/>
